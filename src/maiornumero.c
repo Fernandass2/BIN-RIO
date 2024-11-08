@@ -1,30 +1,20 @@
 #include <stdio.h>
-#include "../lib/comparar.h"
+#include "../lib/numeromaior.h"
 
-float maior_numero_array(float numeros[], int tamanho){
-    float maior = numeros[0];
-
-    for(int i = 1; i < tamanho; i++){
-        if (numeros[i] > maior){
-            maior = numeros[i];
-        }
-    }
-    return 0;
+int maior_numero(int a, int b){
+    return (a > b) ? a : b ;
 }
 int main (){
-    int n;
-    printf("Quantos números você deseja comparar? \n");
-    scanf("%d", &n);
 
-    float numeros [n];
-
-    for (int i = 0; i < n; i++){
-        printf("Digite o %d número", i =+ 1);
-        scanf("%f", &numeros[i]); 
-    }
-
-    float maior = maior_numero_array(numeros, n);
-    printf("O maior número é: %.2f\n", maior);
-    return 0;
+    int num1, num2;
     
-}
+    
+    printf("Digite o primeiro número: \n");
+    scanf("%d", &num1);
+    printf("Digite o segundo número: \n");
+    scanf("%d", &num2);
+
+    printf("O maior número é: %d\n", maior_numero(num1,num2));
+
+    return 0; 
+    }
