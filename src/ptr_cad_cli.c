@@ -20,10 +20,10 @@ int main (){
     scanf("%[^\n]s", nome);
 
     printf("Digite o seu email e tecle Enter: \n");
-    scanf("%[^\n]s", email);
+    scanf("%s", email);
 
-    printf("DIgite sua idade e tecle Enter: \n");
-    scanf("%[^\n]s", idade);
+    printf("Digite sua idade e tecle Enter: \n");
+    scanf("%s", idade);
 
     cadastro(nome,email,idade);
     printf("Cadastrou?");
